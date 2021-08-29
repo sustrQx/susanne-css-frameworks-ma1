@@ -52,3 +52,25 @@ footer {
   width: 70%;
   margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+  footer {
+    font-size: 3vw;
+  }
+
+  .row {
+    row-gap: 3vw;
+    column-gap: 3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 4vw;
+  }
+
+  .row {
+    row-gap: 10vw;
+    column-gap: 10vw;
+  }
+}
