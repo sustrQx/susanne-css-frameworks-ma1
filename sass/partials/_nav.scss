@@ -1,0 +1,52 @@
+nav {
+  background-color: $primary;
+}
+
+.navbar-brand {
+  font-family: "open sans", sans-serif;
+  font-size: 2vw;
+  color: #6a6a6a !important;
+  margin-left: 3vw;
+}
+
+.navbar-nav {
+  position: relative;
+  left: 70vw;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-family: "Archivo Narrow";
+}
+
+.active > .nav-link {
+  color: $pink;
+}
+
+.nav-link {
+  color: $grey;
+  margin-right: 3vw;
+}
+
+.navbar-collapse {
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ .navbar-nav {
+    display: block;
+  }
+}
